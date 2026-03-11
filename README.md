@@ -4,17 +4,19 @@ A simple, interactive command-line Python tool for music information retrieval (
 
 ## Features
 
-- **Rhythm & Syncopation**: Advanced beat and downbeat tracking (via madmom and BEAT THIS!), tempo estimation (BPM), and Toussaint syncopation scoring.
-- **Stem Separation**: On-the-fly drum separation using Demucs.
+- **Rhythm & Syncopation**: Beat and downbeat tracking using BEAT THIS! (or madmom), tempo estimation (BPM), and Toussaint syncopation scoring.
+- **Stem Separation**: Drum separation using Demucs.
 - **Timbre & Dynamics**: LUFS loudness, RMS energy, spectral irregularity, and fluctuation strength.
 - **Harmony & Pitch**: Key and scale extraction (Essentia), and frame-level pitch tracking (CREPE).
 - **Genre & Mood**: Pre-trained deep learning classifiers for genre, danceability, mood, and voice/instrumental detection (Essentia).
 - **Interactive Player**: A built-in GUI player (`play()`) to view waveforms, spectrograms (linear/log/mel), and pitch contours, while sonifying detected beats and onsets over the audio.
-- **Batch Processing**: One-command metric extraction and CSV exporting (`process_and_save()`).
+- **Batch Processing**: Automatic process and save everything as CSV (`process_and_save()`).
 
 ---
 
 ## 🚀 Getting Started
+
+Open the terminal from your macos.
 
 Launch the tool by passing the path to an audio file, a session folder, or a patient folder.
 
@@ -59,8 +61,10 @@ Type the following commands directly into the terminal once `rewardio` is launch
 ### Viewing Info
 - `stimulus.help()` — List all available attributes and methods for the current song.
 - `stimuli.help()` — List all available methods for the session.
+- `patient.help()` — List all available methods for the patient.
 - `stimulus.print()` — Print a summary of the current song (loudness, BPM, syncopation, key, etc.).
 - `stimuli.print()` — Print summary metrics averaged across the whole session.
+- `patient.print()` — Print the current attributes and sessions loaded.
 
 ### Interactive Player & Viz
 - **`stimulus.play()`**
@@ -83,11 +87,12 @@ Access properties on-the-fly. If a metric hasn't been computed yet, `rewardio` c
 ```
 
 ### Exporting Data
+- `stimulus.process_and_save("output_folder")`
+- Computes ALL available metrics (beats, syncopation, loudness, genre, mood, key, etc.) for the specific song and saves them to a CSV file.
 - `stimuli.process_and_save("output_folder")`
   Computes ALL available metrics (beats, syncopation, loudness, genre, mood, key, etc.) for every song in the session and saves them to a CSV file.
 - `patient.process_and_save("output_folder")`
   Does the same, but loops through every session folder, adding a `session` column to the final CSV.
-- *Bonus: You can pass an index like `stimuli.process_and_save(1)` to process and save only the first song!*
 
 ---
 
