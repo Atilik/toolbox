@@ -251,7 +251,7 @@ Running `.process_and_save()` generates a CSV with one row per audio file. All n
 ---
 
 ## References
-# Going to be updated
+### Going to be updated
 - Jensen, Timbre Models of Musical Sounds, Rapport 99/7, University of Copenhagen, 1999.
 - Kim, J. W., Salamon, J., Li, P., & Bello, J. P. (2018). CREPE: A convolutional representation for pitch estimation. ICASSP.
 - Pampalk, E., Rauber, A., Merkl, D. "Content-based Organization and Visualization of Music Archives", ACM Multimedia 2002, pp. 570-579.
