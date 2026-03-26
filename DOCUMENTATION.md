@@ -251,9 +251,8 @@ Running `.process_and_save()` generates a CSV with one row per audio file. All n
 ---
 
 ## References
-
-- Jensen, K. (1999). *Timbre models of musical sounds.* Department of Computer Science, University of Copenhagen.
-- Kim, J. W., Salamon, J., Li, P., & Bello, J. P. (2018). *CREPE: A convolutional representation for pitch estimation.* ICASSP.
-- Pampalk, E., Rauber, A., & Merkl, D. (2002). *Content-based organization and visualization of music archives.* ACM Multimedia.
-- Toussaint, G. (2005). *The Euclidean algorithm generates traditional musical rhythms.* BRIDGES.
-- ITU-R BS.1770-4 (2015). *Algorithms to measure audio programme loudness and true-peak audio level.*
+# Going to be updated
+- Jensen, Timbre Models of Musical Sounds, Rapport 99/7, University of Copenhagen, 1999.
+- Kim, J. W., Salamon, J., Li, P., & Bello, J. P. (2018). CREPE: A convolutional representation for pitch estimation. ICASSP.
+- Pampalk, E., Rauber, A., Merkl, D. "Content-based Organization and Visualization of Music Archives", ACM Multimedia 2002, pp. 570-579.
+- ITU-R BS.1770-4 (2015). Algorithms to measure audio programme loudness and true-peak audio level.
